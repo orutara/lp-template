@@ -1,0 +1,14 @@
+.ly_header {
+  // transition: all 0.5s;
+  z-index: 997;
+  padding: 16px 0;
+
+  .logo {
+    line-height: 0;
+
+    img {
+      max-height: 40px;
+      margin-right: 6px;
+    }
+  }
+}
