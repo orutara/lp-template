@@ -1,4 +1,4 @@
-import '../scss/style.scss';
+// Bootstrap JS
+import 'bootstrap'
 
-const fg = 4
-console.log(fg)
+import '../scss/style.scss'

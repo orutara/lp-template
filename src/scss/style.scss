@@ -1,5 +1,10 @@
-@use "setting/mixin";
-@use "layout/ly-header";
-@use "layout/ly-main";
-@use "layout/ly-footer";
-@use "block/bl-nav";
+@import "setting/custom";
+@import "setting/mixin";
+
+// Boostrap5 scss
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import "layout/ly-header";
+@import "layout/ly-main";
+@import "layout/ly-footer";
+@import "block/bl-nav";
