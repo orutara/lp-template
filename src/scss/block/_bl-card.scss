@@ -1,0 +1,49 @@
+.bl_card {
+  border-radius: 4px;
+
+  &.bl_card__blue {
+    border-bottom: 3px solid #2db6fa;
+  }
+
+  &.bl_card__orange {
+    border-bottom: 3px solid #f68c09;
+  }
+
+  &.bl_card__green {
+    border-bottom: 3px solid #08da4e;
+  }
+
+  &.bl_card__red {
+    border-bottom: 3px solid #e9222c;
+  }
+
+  &.bl_card__purple {
+    border-bottom: 3px solid #b50edf;
+  }
+
+  &.bl_card__pink {
+    border-bottom: 3px solid #f51f9c;
+  }
+
+  .card {
+    padding: 30px;
+    box-shadow: 0px 0 5px rgb(1 41 112 / 8%);
+    transition: 0.3s;
+    height: 100%;
+    border: none;
+  }
+
+  img {
+    padding: 30px;
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+
+  .card-title {
+    font-size: 24px;
+    color: $color-base;
+    font-weight: 700;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+}

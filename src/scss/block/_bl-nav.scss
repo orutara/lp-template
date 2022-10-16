@@ -14,10 +14,10 @@
     transition: 0.3s;
   }
 
-  ul {
+  .nav-link-list {
     display: none;
 
-    @include m.mq(lg) {
+    @include mq(lg) {
       margin: 0;
       padding: 0;
       display: flex;
@@ -26,7 +26,27 @@
     }
   }
 
-  a {
+  a,
+  a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 10px 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
 
+  .offcanvasSpButton {
+    font-size: 24px;
+    border: none;
+    background: transparent;
+  }
+
+  .offcanvas {
+    max-width: 300px;
   }
 }

@@ -1,0 +1,17 @@
+.bl_logo {
+  line-height: 0;
+
+  img {
+    max-height: 40px;
+    margin-right: 6px;
+  }
+
+  span {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $color-base;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 3px;
+  }
+}

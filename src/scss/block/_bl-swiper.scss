@@ -1,0 +1,45 @@
+.bl_swiper {
+  .swiper-slide {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+
+    &-active {
+      opacity: 1;
+
+      @include mq(md) {
+        opacity: 0.3;
+        padding: 30px;
+      }
+    }
+
+    &-next {
+      opacity: 1;
+
+      & + .swiper-slide {
+        padding: 30px;
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $color-main;
+  }
+
+  .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+
+    &-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      opacity: 1;
+      border: 1px solid $color-main;
+    }
+
+    &-bullet-active {
+      background-color: $color-main;
+    }
+  }
+}
