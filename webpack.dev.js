@@ -4,13 +4,15 @@ const path = require('path')
 
 module.exports = merge(commonConfig, {
   mode: 'development',
+  target: 'web',
   // watch: true,
   devtool: 'eval-cheap-module-source-map',
   devServer: {
-    open: true,
     port: 3000,
+    open: true,
     static: {
       directory: path.join(__dirname, 'dist'),
-    }
+    },
+    watchFiles: ['src/**/*'],
   },
 })

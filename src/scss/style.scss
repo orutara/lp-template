@@ -1,5 +1,25 @@
-@use "setting/mixin";
-@use "layout/ly-header";
-@use "layout/ly-main";
-@use "layout/ly-footer";
-@use "block/bl-nav";
+@import "setting/custom";
+@import "setting/mixin";
+
+// Boostrap5 scss
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import "setting/common";
+@import "layout/ly-header";
+@import "layout/ly-main";
+@import "layout/ly-footer";
+@import "block/bl-logo";
+@import "block/bl-nav";
+@import "block/bl-hero";
+@import "block/bl-sectionHeader";
+@import "block/bl-asynmmetricBox";
+@import "block/bl-oneBox";
+@import "block/bl-accodion";
+@import "block/bl-card";
+@import "block/bl-iconCard";
+@import "block/bl-rectangleCard";
+@import "block/bl-swiper";
+@import "block/bl-backToTopButton";
+@import "element/el-btn";
+@import "element/el-triangle.scss";
+@import "helper/hp-maxWidth";
