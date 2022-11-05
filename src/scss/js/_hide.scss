@@ -1,0 +1,9 @@
+.js {
+  &_hideUpper {
+    transform: translateY(-100%);
+  }
+
+  &_hideLower {
+    transform: translateY(150%);
+  }
+}

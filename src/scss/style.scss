@@ -5,6 +5,8 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 @import "setting/common";
+@import "lib/loading-bar";
+@import "js/hide";
 @import "layout/ly-header";
 @import "layout/ly-main";
 @import "layout/ly-footer";
@@ -19,6 +21,7 @@
 @import "block/bl-iconCard";
 @import "block/bl-rectangleCard";
 @import "block/bl-swiper";
+@import "block/bl-viewer";
 @import "block/bl-backToTopButton";
 @import "element/el-btn";
 @import "element/el-triangle.scss";
