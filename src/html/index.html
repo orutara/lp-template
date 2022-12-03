@@ -681,7 +681,7 @@
       var pos = 0;
       var windowSize = $(window).width();
       $(window).scroll(function () {
-        if ($(this).scrollTop() < pos && windowSize <= 768) {
+        if ($(this).scrollTop() < pos) {
           $('#header').removeClass('js_hideUpper');
           // $('#backToTop').removeClass('js_hideLower');
         } else {
@@ -710,11 +710,10 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper(".swiper", {
-      roop: {
-        loop: true,
-      },
+      loop: true,
       pagination: {
-        el: ".swiper-pagination"
+        el: ".swiper-pagination",
+        clickable: true
       },
       autoplay: {
         delay: 5000,
