@@ -1,7 +1,11 @@
 .bl_asynmmetricBox {
 
   .bl_asynmmetricBox_content {
-    padding: 40px;
+    margin: 40px 20px;
+
+    @include mq(md) {
+      padding: 40px;
+    }
   }
 
   .bl_asynmmetricBox_heading {
