@@ -8,6 +8,7 @@
 
   @include mq(lg) {
     height: 100vh;
+    max-height: 700px;
     background-attachment: fixed;
   }
 
@@ -34,7 +35,7 @@
   }
 
   .heroImg {
-    max-width: 80%;
+    max-width: 500px;
     text-align: center;
     margin: 80px auto 0;
   }

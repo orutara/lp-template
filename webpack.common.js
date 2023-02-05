@@ -3,6 +3,7 @@ const glob = require('glob');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const sortMediaQueriesPlugin = require('postcss-sort-media-queries');
 const { PurgeCSSPlugin } = require('purgecss-webpack-plugin');
 
 const PATHS = {
@@ -31,7 +32,16 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'postcss-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  require("postcss-sort-media-queries")({ sort: 'mobile-firstl' }),
+                ]
+              }
+            }
+          },
           'sass-loader',
         ],
       },
@@ -56,8 +66,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: './css/[name].[contenthash].css',
     }),
+    // new sortMediaQueriesPlugin(),
     new PurgeCSSPlugin({
       paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
-    })
+    }),
   ],
 }
