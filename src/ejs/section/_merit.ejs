@@ -1,0 +1,44 @@
+<% 
+const meritSectionHeaderProps={ mainHeading: 'merit' , subHeading: 'Merit' } 
+const meritCards = [
+  {
+    imageUrl: '../assets/images/img/img_800x600.jpg',
+    heading: 'Card Title',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, facere fuga placeat odio iste quae minus adipisci voluptas mollitia enim commodi quasi nemo obcaecati, sunt deleniti necessitatibus fugiat temporibus corporis?',
+    alt: 'Card Title'
+  },
+  {
+    imageUrl: '../assets/images/img/img_800x600.jpg',
+    heading: 'Card Title 2',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, facere fuga placeat odio iste quae minus adipisci voluptas mollitia enim commodi quasi nemo obcaecati',
+    alt: 'Card Title'
+  },
+  {
+    imageUrl: '../assets/images/img/img_800x600.jpg',
+    heading: 'Card Title 3',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, facere fuga placeat odio iste quae minus adipisci',
+    alt: 'Card Title'
+  }
+]
+%>
+
+  <section id="merit" class="bg-merit-pattern bg-fixed">
+    <div class="max-w-6xl mx-auto">
+      <%- include('../components/_sectonHeader.ejs', {data: meritSectionHeaderProps}) %>
+          <ul class="flex items-center justify-between">
+            <% meritCards.map(meritCard => { %>
+              <li class="flex-[0_1_33.3%] p-2 aos-init aos-animate lg:p-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="p-4 shadow-lg rounded-[8px] bg-white lg:p-8 lg:min-h-[540px]">
+                  <img src="<%= meritCard.imageUrl %>" class="rounded-[8px]" alt="<%= meritCard.alt %>" />
+                  <div class="card-body">
+                    <p class="text-center text-secondary font-bold mt-[20px] mb-[16px] text-[24px]"><%= meritCard.heading %></p>
+                    <p class="text-justify">
+                      <%= meritCard.desc %>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            <% }) %>
+          </ul>
+    </div>
+  </section>

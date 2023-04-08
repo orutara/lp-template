@@ -1,0 +1,13 @@
+<% 
+  const pointsSectionHeaderProps = {
+    mainHeading: 'points',
+    subHeading: 'Product Points',
+  }
+%>
+
+<section id="points" class="">
+  <div class="max-w-6xl mx-auto">
+    <%- include('../components/_sectonHeader.ejs', {data: pointsSectionHeaderProps}) %>
+    <%- include('../components/_swiper.ejs') %>
+  </div>
+</section>

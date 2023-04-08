@@ -1,0 +1,33 @@
+<% 
+const heroButtonProps = {
+  text: 'Let\'s Go!',
+  href: '#about',
+  className: 'bg-primary'
+}
+%>
+
+<div id="hero" class="w-100 h-auto text-center flex items-center pt-[120px] pb-[64px] bg-hero-pattern bg-cover md:text-left lg:bg-fixed lg:max-h-[700px]">
+  <div class="container mx-auto">
+    <div class="max-w-[1000px] mx-auto">
+      <div class="flex">
+        <div class="flex-[0_1_50%] flex flex-col justify-center">
+          <h1 class="m-0 font-bold aos-init text-[32px] aos-animate lg:text-[48px] lg:text-left" data-aos="fade-up">
+            The Main Copy
+          </h1>
+          <p class="text-[26px] mt-[16px] mx-0 mb-0 aos-init aos-animate lg:text-left" data-aos="fade-up" data-aos-delay="400">
+            The Sub Copy
+          </p>
+          <div class="text-center lg:text-left mt-[24px] aos-init aos-animate" data-aos="fade-up" data-aos-delay="1000">
+            <%- include('./_button.ejs', {data: heroButtonProps}) %>
+          </div>
+        </div>
+        <div class="flex-[0_1_50%] max-w-[500px] text-center mx-auto mt-[80px]">
+          <img src="../assets/images/img/img_hero.png" class="" alt="logo" />
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.bl_hero_inner -->
+  </div>
+  <!-- /.container -->
+</div>

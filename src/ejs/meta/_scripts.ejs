@@ -1,0 +1,70 @@
+<!-- header scroll toggle -->
+<script>
+const header = document.querySelector('header');
+let prevScrollpos = window.pageYOffset;
+window.addEventListener('scroll', function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    // 上にスクロールした時の処理
+    header.classList.remove('-translate-y-[72px]');
+    header.classList.add('translate-y-0');
+  } else {
+    // 下にスクロールした時の処理
+    header.classList.remove('translate-y-0');
+    header.classList.add('-translate-y-[72px]');
+  }
+  prevScrollpos = currentScrollPos;
+});
+</script>
+<!-- accordion -->
+<script>
+  // ヘッダー要素を取得
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+  // ヘッダーをクリックした時の処理を定義
+  accordionHeaders.forEach((accordionHeader) => {
+    accordionHeader.addEventListener('click', () => {
+      // ヘッダーの次の要素を取得
+      const accordionBody = accordionHeader.nextElementSibling;
+      // body要素に hidden クラスをトグル
+      accordionBody.classList.toggle('hidden');
+    });
+  });
+</script>
+<!-- Viewer.js CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.0/viewer.min.js"
+  integrity="sha512-GT1saHeCyf4p1Vi28cxW92WPl+H/cs4Q+gB8T5rThKJopCrSus/l5VA3in6DouR6kfMLmoaiDVQ+zdBQd9xqEA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  const viewer = new Viewer(document.getElementById('viewer'));
+</script>
+<!-- AOS.js CDN-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-in-out-sine'
+  });
+</script>
+<!-- Swiper.js CDN-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    autoplay: {
+      delay: 5000,
+    },
+    speed: 1000,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>

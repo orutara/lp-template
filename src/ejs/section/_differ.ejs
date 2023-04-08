@@ -1,0 +1,31 @@
+<% 
+  const aboutSectionHeaderProps = {
+    mainHeading: 'differ',
+    subHeading: 'Product Differ',
+  }
+%>
+
+<section id="differ" class="">
+  <%- include('../components/_sectonHeader.ejs', {data: aboutSectionHeaderProps}) %>
+  <!-- / .bl_sectionHeader -->
+    <div class="flex">
+      <div class="flex-[0_1_50%]">
+        <div class="px-6 py-8">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum eaque error officia
+            architecto!
+            Adipisci, magni blanditiis cupiditate facilis molestiae amet nihil praesentium, inventore, rem ex
+            harum
+            asperiores neque incidunt!</p>
+        </div>
+      </div>
+      <div class="flex-[0_1_50%] bg-secondary">
+        <div class="px-6 py-8">
+          <p class="text-white font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum eaque error officia
+            architecto!
+            Adipisci, magni blanditiis cupiditate facilis molestiae amet nihil praesentium, inventore, rem ex
+            harum
+            asperiores neque incidunt!</p>
+        </div>
+      </div>
+    </div>
+</section>

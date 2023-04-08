@@ -1,0 +1,20 @@
+<% 
+  const photoSectionHeaderProps = {
+    mainHeading: 'photography',
+    subHeading: 'Photography',
+  }
+%>
+
+<section id="photography" class="">
+  <div class="max-w-6xl mx-auto">
+    <%- include('../components/_sectonHeader.ejs', {data: photoSectionHeaderProps}) %>
+    <div class="">
+      <p class="text-center">
+        Touch!
+      </p>
+      <div class="">
+        <%- include('../components/_viewer.ejs') %>
+      </div>
+    </div>
+  </div>
+</section>

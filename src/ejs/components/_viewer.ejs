@@ -1,0 +1,36 @@
+<% 
+  const photos = [
+    {
+      imageUrl: '../assets/images/img/img_300x300.jpg',
+      alt: 'Picture'
+    },
+    {
+      imageUrl: '../assets/images/img/img_300x300.jpg',
+      alt: 'Picture'
+    },
+    {
+      imageUrl: '../assets/images/img/img_300x300.jpg',
+      alt: 'Picture'
+    },
+    {
+      imageUrl: '../assets/images/img/img_300x300.jpg',
+      alt: 'Picture'
+    },
+    {
+      imageUrl: '../assets/images/img/img_300x300.jpg',
+      alt: 'Picture'
+    },
+    {
+      imageUrl: '../assets/images/img/img_300x300.jpg',
+      alt: 'Picture'
+    }
+  ]
+%>
+
+<ul id="viewer" class="flex flex-wrap max-w-[880px] mx-auto">
+  <% photos.map((photo) => { %>
+    <li class="flex-[0_1_33.3%] p-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+      <img src="<%= photo.imageUrl %>" alt="<%= photo.alt %>" width="100%">
+    </li>
+  <% }) %>
+</ul>

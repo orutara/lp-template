@@ -1,0 +1,13 @@
+<% 
+  const introSectionHeaderProps = {
+    mainHeading: 'Intro',
+    subHeading: 'introduction',
+  }
+%>
+
+<section id="intro" class="">
+  <div class="max-w-6xl mx-auto">
+    <%- include('../components/_sectonHeader.ejs', {data: introSectionHeaderProps}) %>
+    <%- include('../components/_contentHarf.ejs') %>
+  </div>
+</section>

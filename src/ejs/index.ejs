@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%- include('./meta/_metadata.ejs') %>
+
+    <!-- pace.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <!-- pace.js CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+    <%- include('./meta/_stylesheets.ejs') %>
+</head>
+
+<body>
+  <div class="pace-wrapper">
+    <%- include('./components/_header.ejs') %>
+
+      <%- include('./components/_hero.ejs') %>
+
+        <main>
+          <%- include('./section/_intro.ejs') %>
+
+          <%- include('./section/_about.ejs') %>
+
+          <%- include('./section/_merit.ejs') %>
+
+          <%- include('./section/_differ.ejs') %>
+
+          <%- include('./section/_points.ejs') %>
+
+          <%- include('./section/_step.ejs') %>
+
+          <%- include('./components/_triangle.ejs') %>
+
+          <%- include('./section/_photography.ejs') %>
+
+          <%- include('./section/_faq.ejs') %>
+
+          <%- include('./section/_contact.ejs') %>
+
+        </main>
+
+        <%- include('./components/_footer.ejs') %>
+
+  </div>
+  <!-- /.pace-wrapper -->
+
+  <%- include('./components/_backToButton.ejs') %>
+
+    <%- include('./meta/_scripts.ejs') %>
+
+</body>
+
+</html>
