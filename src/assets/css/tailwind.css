@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply flex items-center justify-between px-5 py-4 font-bold transition-all duration-75;
+  }
+
+  .triangle {
+    @apply  relative inline-block w-full before:content-[''] before:absolute before:top-[-20px] before:left-1/2 before:translate-x-[-50%] before:border-t-[30px] before:border-r-[50px] before:border-l-[50px] before:border-solid before:border-t-black before:border-r-transparent before:border-l-transparent
+  }
+}
