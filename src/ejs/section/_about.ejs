@@ -1,12 +1,72 @@
 <% 
   const aboutSectionHeadingProps = {
-    mainHeading: 'About',
-    subHeading: 'About Product',
+    mainHeading: 'Service',
+    subHeading: '柔軟で効果的なWeb研修サービス',
   }
 %>
 
-<section id="about" class="">
+<section id="about" class="pt-[80px] pb-[80px] md:pb-[100px]">
   <div class="max-w-6xl mx-auto">
-    <%- include('../components/_sectionHeading.ejs', {data: aboutSectionHeadingProps}) %>
+    <div class="px-4">
+      <%- include('../components/_sectionHeading.ejs', {data: aboutSectionHeadingProps}) %>
+    </div>
+    <div class="md:flex md:items-center mb-[80px]">
+      <!-- ↓ Left Side ↓ -->
+      <div class="md:flex-[0_1_50%] flex flex-col justify-center p-4">
+        <div class="aos-init aos-animate" data-aos="fade-up">
+          <p class="text-[28px] leading-[32px] mt-[10px] mx-0 mb-4 p-0 font-bold text-secondary md:text-[38px] md:leading-[42px]">
+            柔軟で効果的なWeb研修サービス
+          </p>
+          <p class="">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure et dolores placeat esse corporis facilis quaerat, magnam minima consequatur ea repellat culpa amet. Voluptate ratione quaerat libero neque voluptates ad!
+          </p>
+        </div>
+      </div>
+      <!-- ↑ Left Side ↑ -->
+      <!-- ↓ Right Side ↓ -->
+      <div class="md:flex-[0_1_50%] flex items-center p-4">
+        <img src="../assets/images/img/img_800x600.jpg" class="" alt="" />
+      </div>
+      <!-- ↑ Right Side ↑ -->
+    </div>
+    <div class="md:flex md:items-center mb-[80px]">
+      <!-- ↓ Right Side ↓ -->
+      <div class="md:flex-[0_1_50%] flex items-center p-4">
+        <img src="../assets/images/img/img_800x600.jpg" class="" alt="" />
+      </div>
+      <!-- ↑ Right Side ↑ -->
+      <!-- ↓ Left Side ↓ -->
+      <div class="md:flex-[0_1_50%] flex flex-col justify-center p-4">
+        <div class="aos-init aos-animate" data-aos="fade-up">
+          <p class="text-[28px] leading-[32px] mt-[10px] mx-0 mb-4 p-0 font-bold text-secondary md:text-[38px] md:leading-[42px]">
+            Asymmetric Boxes
+          </p>
+          <p class="">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure et dolores placeat esse corporis facilis quaerat, magnam minima consequatur ea repellat culpa amet. Voluptate ratione quaerat libero neque voluptates ad!
+          </p>
+        </div>
+      </div>
+      <!-- ↑ Left Side ↑ -->
+    </div>
+    <div class="md:flex md:items-center">
+      <!-- ↓ Left Side ↓ -->
+      <div class="md:flex-[0_1_50%] flex flex-col justify-center p-4">
+        <div class="aos-init aos-animate" data-aos="fade-up">
+          <p class="text-[28px] leading-[32px] mt-[10px] mx-0 mb-4 p-0 font-bold text-secondary md:text-[38px] md:leading-[42px]">
+            Asymmetric Boxes
+          </p>
+          <p class="">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure et dolores placeat esse corporis facilis quaerat, magnam minima consequatur ea repellat culpa amet. Voluptate ratione quaerat libero neque voluptates ad!
+          </p>
+        </div>
+      </div>
+      <!-- ↑ Left Side ↑ -->
+      <!-- ↓ Right Side ↓ -->
+      <div class="md:flex-[0_1_50%] flex items-center p-4">
+        <img src="../assets/images/img/img_800x600.jpg" class="" alt="" />
+      </div>
+      <!-- ↑ Right Side ↑ -->
+    </div>
+    
   </div>
 </section>

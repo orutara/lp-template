@@ -11,3 +11,15 @@
     @apply  relative inline-block w-full before:content-[''] before:absolute before:top-[-20px] before:left-1/2 before:translate-x-[-50%] before:border-t-[30px] before:border-r-[50px] before:border-l-[50px] before:border-solid before:border-t-black before:border-r-transparent before:border-l-transparent
   }
 }
+
+@layer utilities {
+  .bg-gradient-main{
+    @apply bg-gradient-to-r from-graFrom to-graTo;
+  }
+}
+
+.clip-text {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

@@ -22,23 +22,23 @@ const meritCards = [
 ]
 %>
 
-  <section id="merit" class="bg-merit-pattern bg-fixed">
+  <section id="merit" class="py-[64px] bg-merit-pattern bg-no-repeat bg-fixed">
     <div class="max-w-6xl mx-auto">
       <%- include('../components/_sectionHeading.ejs', {data: meritSectionHeaderProps}) %>
-          <ul class="flex items-center justify-between">
-            <% meritCards.map(meritCard => { %>
-              <li class="flex-[0_1_33.3%] p-2 aos-init aos-animate lg:p-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="p-4 shadow-lg rounded-[8px] bg-white lg:p-8 lg:min-h-[540px]">
-                  <img src="<%= meritCard.imageUrl %>" class="rounded-[8px]" alt="<%= meritCard.alt %>" />
-                  <div class="card-body">
-                    <p class="text-center text-secondary font-bold mt-[20px] mb-[16px] text-[24px]"><%= meritCard.heading %></p>
-                    <p class="text-justify">
-                      <%= meritCard.desc %>
-                    </p>
-                  </div>
+        <ul class="lg:flex lg:items-center lg:justify-between">
+          <% meritCards.map(meritCard => { %>
+            <li class="lg:flex-[0_1_33.3%] p-2 mb-[24px] aos-init aos-animate lg:p-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="p-6 shadow-lg rounded-[4px] bg-white lg:p-8 lg:min-h-[540px]">
+                <img src="<%= meritCard.imageUrl %>" class="rounded-[8px] mx-auto" alt="<%= meritCard.alt %>" />
+                <div class="card-body">
+                  <p class="text-center text-secondary font-bold mt-[20px] mb-[16px] text-[24px]"><%= meritCard.heading %></p>
+                  <p class="text-justify">
+                    <%= meritCard.desc %>
+                  </p>
                 </div>
-              </li>
-            <% }) %>
-          </ul>
+              </div>
+            </li>
+          <% }) %>
+        </ul>
     </div>
   </section>

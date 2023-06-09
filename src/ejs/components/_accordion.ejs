@@ -17,13 +17,13 @@ const faqList = [
 
 <ul class="accordion mb-4" id="faqlist">
   <% faqList.map((faq) => { %>
-    <li class="accordion-item">
-      <p class="accordion-header bg-gray-200 py-2 px-4 cursor-pointer font-medium text-gray-700 border-b-[1px] border-solid border-secondary">
+    <li class="accordion-item mb-[24px]">
+      <p class="accordion-header bg-gray-200 p-4 font-semibold text-gray-700 border-b-[1px] border-solid border-[#cccccc]">
         <%= faq.question %>
       </p>
-      <div class="accordion-body bg-white py-2 px-4 text-gray-700">
+      <p class="accordion-body text-secondary bg-white p-4 text-gray-700">
         <%= faq.answer %>
-      </div>
+      </p>
     </li>
   <% }) %>
 </ul>

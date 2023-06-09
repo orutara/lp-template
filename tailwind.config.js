@@ -6,9 +6,12 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       'white': '#ffffff',
+      'sub': '#FAFAFA',
       'black': '#333333',
       'primary': '#04B57B',
       'secondary': '#004731',
+      'graFrom': '#3cd84c',
+      'graTo': '#1ae5a1',
     },
     extend: {
       backgroundImage: {

@@ -27,10 +27,10 @@
   ]
 %>
 
-<div class="swiper">
+<div class="swiper min-h-[310px] sm:min-h-[500px] md:min-h-0">
   <div class="swiper-wrapper">
     <% slides.map((slide) => { %>
-      <div class="swiper-slide text-center p-[16px] scale-90 transition-all duration-1000 opacity-30 [&.swiper-slide-next]:opacity-100 md:[&.swiper-slide-next]:scale-100">
+      <div class="swiper-slide text-center p-[16px] scale-90 transition-all duration-1000 opacity-30 [&.swiper-slide-active]:opacity-100 md:[&.swiper-slide-active]:opacity-30 [&.swiper-slide-next]:opacity-100 md:[&.swiper-slide-next]:scale-100">
         <img src="<%= slide.imageUrl %>" class="" alt="<%= slide.alt %>" />
       </div>
     <% }) %>
@@ -40,6 +40,6 @@
   <div class="swiper-button-next text-primary font-bold"></div>
   <!-- / Navigation Button -->
   <!-- Pagination -->
-  <div class="swiper-pagination [&>span]:w-[12px] [&>span]:h-[12px] [&>span]:border [&>span]:border-primary [&>span]:bg-white [&>span]:opacity-95 [&>span.swiper-pagination-bullet-active]:bg-primary"></div>
+  <div class="swiper-pagination !bottom-[-5px] [&>span]:w-[12px] [&>span]:h-[12px] [&>span]:border [&>span]:border-primary [&>span]:bg-white [&>span]:opacity-95 [&>span.swiper-pagination-bullet-active]:bg-primary"></div>
   <!-- / Pagination -->
 </div>

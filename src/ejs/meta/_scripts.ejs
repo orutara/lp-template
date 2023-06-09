@@ -16,20 +16,6 @@ window.addEventListener('scroll', function() {
   prevScrollpos = currentScrollPos;
 });
 </script>
-<!-- accordion -->
-<script>
-  // ヘッダー要素を取得
-  const accordionHeaders = document.querySelectorAll('.accordion-header');
-  // ヘッダーをクリックした時の処理を定義
-  accordionHeaders.forEach((accordionHeader) => {
-    accordionHeader.addEventListener('click', () => {
-      // ヘッダーの次の要素を取得
-      const accordionBody = accordionHeader.nextElementSibling;
-      // body要素に hidden クラスをトグル
-      accordionBody.classList.toggle('hidden');
-    });
-  });
-</script>
 <!-- Viewer.js CDN-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.0/viewer.min.js"
   integrity="sha512-GT1saHeCyf4p1Vi28cxW92WPl+H/cs4Q+gB8T5rThKJopCrSus/l5VA3in6DouR6kfMLmoaiDVQ+zdBQd9xqEA=="
